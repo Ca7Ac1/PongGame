@@ -6,7 +6,7 @@ public class Paddle {
     public static final int RIGHT = 1;
 
     private static final int WIDTH = 15;
-    private static final int HEIGHT = 80;
+    private static final int HEIGHT = 110;
 
     private int xCor;
     private int yCor;

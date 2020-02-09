@@ -7,14 +7,13 @@ public class Pong extends JPanel implements ActionListener {
 
     private static final int BOARD_WIDTH = 700;
     private static final int BOARD_HEIGHT = 700;
-    private static final int OPTIMAL_DELAY = 5;
 
     private static Paddle lPaddle;
     private static Paddle rPaddle;
     private static Ball ball;
 
     private Timer timer;
-    private static int delay = 40;
+    private static int delay = 5;
 
     private static int lScore;
     private static int rScore;
@@ -63,11 +62,6 @@ public class Pong extends JPanel implements ActionListener {
         lPaddle.update();
         rPaddle.update();
         ball.update();
-
-        if (delay > OPTIMAL_DELAY) {
-            delay -= .1;
-            timer.setDelay(delay);
-        }
 
         repaint();
 
